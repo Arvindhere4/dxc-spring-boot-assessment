@@ -1,6 +1,6 @@
 package com.dxc.learning.personrestapi.repository;
 
-import com.dxc.personrestapi.model.Person;
+import com.dxc.learning.personrestapi.model.Person;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

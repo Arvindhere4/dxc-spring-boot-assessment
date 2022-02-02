@@ -2,7 +2,7 @@ package com.dxc.learning.personrestapi.service;
 
 import java.util.List;
 
-import com.dxc.personrestapi.model.Person;
+import com.dxc.learning.personrestapi.model.Person;
 
 public interface PersonService {
 

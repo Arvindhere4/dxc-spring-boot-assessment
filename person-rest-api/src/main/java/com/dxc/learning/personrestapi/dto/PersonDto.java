@@ -7,6 +7,8 @@ import javax.validation.constraints.Size;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+
+
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
@@ -28,7 +30,7 @@ public class PersonDto {
     private String email;
 
     @NotBlank(message = "user password is mandatory")
-    @Size(min = 6, max = 10, message = "password size must be in between 6 and 10")
+    @Size(min = 4, max = 20, message = "password size must be in between 4 and 20")
     private String password;
 
 }

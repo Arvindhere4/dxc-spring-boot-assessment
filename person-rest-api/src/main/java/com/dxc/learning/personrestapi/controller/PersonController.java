@@ -4,17 +4,20 @@ import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import javax.validation.Valid;
 
-import com.dxc.personrestapi.services.PersonService;
-import com.dxc.personrestapi.dto.PersonDto;
-import com.dxc.personrestapi.model.Person;
-import com.dxc.personrestapi.controller.PersonNotFoundException;
+import com.dxc.learning.personrestapi.dto.PersonDto;
+ 
+import com.dxc.learning.personrestapi.model.Person;
+
+import com.dxc.learning.personrestapi.service.PersonService;
 
 import org.modelmapper.ModelMapper;
+
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.http.HttpStatus;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -23,6 +26,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+
+
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;

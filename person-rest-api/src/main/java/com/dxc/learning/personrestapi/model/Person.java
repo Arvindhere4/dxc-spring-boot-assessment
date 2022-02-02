@@ -24,8 +24,12 @@ public class Person {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
+    private String email;
     private LocalDate dob;
     private String address;
-    private String email;
+
+    public Person orElseThrow(Object object) {
+        return null;
+    }
 
 }
